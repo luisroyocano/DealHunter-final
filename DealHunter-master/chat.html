@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/icon-font.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/LOGO.png">
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="main.js"></script>
+
+    <title>Deal Hunter</title>
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav" onclick="openNav()">
+        
+        <a href="perfil.html">Mi perfil</a>
+        <a href="chat.html">Chats</a>
+        <a href="#">Favoritos</a>
+        <a href="#">Ayuda y contacto</a>
+      </div>
+    <header class="header">
+        <div class="header__logo-box">
+            <a href="index.html">
+                <img src="img/LOGO.png" alt="Logo" class="header__logo">
+            </a> 
+        </div>
+        <div class="header__text-box">
+            <input class="header__search-box" type="text" placeholder="Search.." >
+        </div>
+        <div class="header__menu">
+            <ul class="header__menu--desplegable">
+                <li><a class="header__menu--desplegable-link"><img src="img/user.png" alt="Logo" class="header__logo"></a></li>
+                    <ul class="header__menu--elementos">
+                        <li><a class="header__menu--elementos-elemento" href="sign_in.html">Iniciar Sesión</a></li>
+                        <li><a class="header__menu--elementos-elemento" href="sing_up.html">Registrarse</a></li>
+                    </ul>
+            </ul>
+        </div>
+
+        <div class="header__menu">
+            <ul class="header__menu--desplegable">
+            <a class="header__menu--desplegable-link"  >
+            
+            
+                <div class="navigation" >
+                    <input type="checkbox" class="navigation__checkbox" id="navi-toggle" onclick="openNav()">
+                    <label for="navi-toggle" class="navigation__button" >
+                        <span class="navigation__icon">&nbsp;</span>
+                    </label>
+                    <div class="navigation__background">
+                        &nbsp;
+                    </div>
+            
+            </a>
+                    
+            </ul>
+        </div>
+    </header>
+    
+    
+        <section class="section-chat contenido">
+            <div class="usuario ">
+                <a href="perfil.html">
+                    <figure class="usuario__shape">
+                        <img src="img/perfil2.jpg" alt="Person on a tour" class="usuario__img-profile">
+                    </figure>
+                </a>
+                <p class="usuario__text">
+                    <a href="perfil.html" class="usuario__text-link-chat"> Juanpe27</a>
+                </p>
+            </div>
+            <div class="randomAdd randomAdd--chat">    
+                <img src="img/coche.jpg" alt="Logo" class="randomAdd--chat-img">        
+                <div class="heading-tertiary u-margin-bottom-small">
+                Ford Fiesta
+                </div>
+                <p class="feature-box__text u-margin-bottom-small">
+                7500€
+                </p>
+                <a href="product.html" class="btn btn--white btn--animated">Ver</a>
+            </div>
+            <div class="chat">
+            
+                <div class="chat__msj-box">
+                
+                    <div class="chat__msj-box--mymsj mensaje mensaje--izquierdo">
+                        Hola buenas, estoy interesado
+                    </div>
+                    <div class="chat__msj-box--hismsj mensaje mensaje--derecho">
+                        Hola, que tal? está en muy buenas condiciones siempre ha dormido en garage
+                    </div>
+                    <div class="chat__msj-box--mymsj mensaje mensaje--izquierdo">
+                        Podriamos quedar y hacer el intercambio
+                    </div>
+                    <div class="chat__msj-box--hismsj mensaje mensaje--derecho">
+                        Esta semana estoy libre de miercoles a viernes todas las tardes
+                    </div>
+                    
+                
+                
+            </div>
+            <div class="chat__writing-box">
+                <input class="chat__writing-box--input" type="text" placeholder="Envíar mensaje" >
+            </div>
+        </div>
+    </section>
+    <section class="section-piepag">
+        <div class="row">
+            <div class="col-1-of-2">
+                <p class="paragraph u-margin-bottom-small">
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit, ridiculus eros scelerisque dictumst egestas sodales pulvinar posuere, purus eget ante neque cras massa
+                </p>
+            </div>
+            <div class="col-1-of-2">
+                <p class="paragraph u-margin-bottom-small">
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit, ridiculus eros scelerisque dictumst egestas sodales pulvinar posuere, purus eget ante neque cras massa
+                </p>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

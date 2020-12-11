@@ -1,0 +1,19 @@
+@mixin clearfix {
+    &:after {
+        // clearfix hack to avoid row has 0px width
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+@mixin colwidth {
+    @for $size from 1 through $cols {
+        @for $length from $size through $cols {
+            @if $size !=$length or $size==1 {
+                .col-#{$size}-of-#{$length} {
+                    width: calc-col-width($size, $length);
+                }
+            }
+        }
+    }
+}

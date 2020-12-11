@@ -1,0 +1,52 @@
+.u-center-text {
+    text-align: center;
+}
+.u-margin-bottom-small {
+    margin-bottom: 1.5rem;
+}
+.u-margin-bottom-medium {
+    margin-bottom: 4rem;
+}
+
+.u-margin-bottom-big {
+    margin-bottom: 8rem;
+}
+.u-margin-top {
+    margin-top: 8rem;
+}
+.u-margin-huge {
+    margin-top: 10rem;
+}
+.u-border-orange {
+    border: 2px solid $color-secondary-light;
+    border-radius: 15px;
+}
+
+.u-centrado {
+    top: 50%;
+    left:50%;
+    margin: 0;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+
+.u-centrado-horizontal {
+    
+    left:50%;
+    margin: 0;
+    position: absolute;
+    transform: translate(-50%,60%);
+    width: 100%;
+}
+
+.u-float-der{
+    float: right;
+
+
+}
+
+.u-float-izq{
+    float: left;
+    
+}

@@ -1,0 +1,25 @@
+.categories{
+    background-color: $color-primary;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, .3);
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    &__categorie{
+
+        text-align: center;
+        padding: 2rem;
+
+        &-icon {
+            font-size: 6rem;
+            margin-bottom: 0.5rem;
+            display: inline-block;
+            background-color: white;
+            background-clip: text;
+            -webkit-background-clip: text; // clip background to the text
+            color: transparent; // hide the text to show the backgroup clipped
+        }
+    }
+    
+}

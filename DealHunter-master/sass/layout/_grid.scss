@@ -1,0 +1,16 @@
+.row {
+    max-width: $grid-width; // different than width
+    margin: 0 auto; // trick to center block element inside of another block elements. auto value results in a margin of the same size left and right 
+    &:not(:last-child) {
+        margin-bottom: $gutter-vertical;
+    }
+    @include clearfix;
+    @include colwidth;
+    [class^="col-"] {
+        //attribute selector
+     float: left;
+     &:not(:last-child) {
+         margin-right: $gutter-horizontal;
+     }
+    }
+}

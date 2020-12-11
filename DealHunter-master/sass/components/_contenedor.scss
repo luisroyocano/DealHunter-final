@@ -1,0 +1,13 @@
+.contenedor{
+    background-color: $color-white;
+    border-radius: 15px;
+    width: 95%;
+    display: inline-block;
+    padding: 2rem;
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    position: relative;
+    
+
+}

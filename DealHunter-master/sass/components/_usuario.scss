@@ -1,0 +1,95 @@
+.usuario{
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    box-sizing: border-box;
+    margin-left: 2vw;
+    
+    padding: 2vh 0;
+    float: left;
+    width: 50%;
+    
+    
+    
+    
+    
+    
+    //text-align: center;
+    
+    &__shape {
+        position: relative;
+       float: left;
+       overflow: hidden;
+        
+
+        width: 8rem;
+        height: 8rem;
+        shape-outside: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        
+
+    }
+    &__img-profile{
+        height: 100%;
+        transform: translateX(-2rem);;
+        
+    }
+    &__text{
+        font-size: 2rem;
+        
+        margin-left: 1.5vw;
+        color: $color-primary;
+        
+        height: 100%;
+       &-link{
+        color: $color-primary;
+        text-decoration: none;
+        margin-top: 2rem;
+        
+        &:hover {
+               
+            transform: translateY(-10px);
+            
+            
+            color:$color-secondary-light-3;
+            
+            font-weight:bolder ;
+           }
+          
+       }
+       &-link-chat{
+        float: left;
+           font-size: 4rem;
+           color: $color-primary;
+           text-decoration: none;
+           padding-left: 2rem;
+           font-weight: bold;
+           transition: 0.5s;
+
+           &:hover {
+               
+            transform: translateY(-10px);
+            
+            background-color: $color-grey-light-1;
+            color:$color-secondary-light-3;
+            
+            font-weight:bolder ;
+           }
+          
+    
+            &::after {
+                transform: scaleX(1.4) scaleY(1.6);
+                opacity: 0;
+            }
+    
+        }
+           
+       
+    }
+
+
+    
+}
+
+    
+

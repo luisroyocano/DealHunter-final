@@ -1,0 +1,75 @@
+.comentario {
+    position: relative;
+    
+    width: 40%;
+    margin-top:5vh;
+    box-shadow: 0 3rem 6rem rgba($color-black, 0.1);
+    border-radius: 15px;
+    margin: 2.5%;
+    padding: 6rem;
+    margin-bottom: 3rem;
+    padding-left: 9rem;
+    font-size: $default-font-size;
+    background-color: rgba($color-white, 0.6);
+    transition: all .5s;
+
+    &:hover {
+        transform: translateY(-1.5rem) scale(1.03);
+        background-color:$color-secondary-light-4;
+        box-shadow: 0 1.5rem 4rem rgba($color-secondary-dark, .35);
+        
+    }
+    
+    &__shape {
+        position: relative;
+        
+        float:left;
+        width: 8rem;
+        height: 8rem;
+        
+        shape-outside: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        transform: translate(-50%,-50%);
+        margin-right: 0px;
+    }
+    &__img {
+        height: 100%;
+        transform: translateX(-4rem) ;
+        
+        transition: all 0.5s;
+    }
+    &__text{
+        float:left;
+        top:50%;
+        transform: translate(0,-50%);
+        float:left;
+    }
+
+    &__caption {
+        position: absolute;
+        
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 20%);
+        color: $color-white;
+        text-transform: uppercase;
+        font-size: 1.7rem;
+        text-align: center;
+        transition: all 0.5s;
+        opacity: 0;
+        }
+
+        &:hover &__caption {
+            opacity: 1;
+            transform: translate(-50%, -50%);
+    }
+
+    &:hover &__img {
+        transform: translateX(-4rem) scale(1);
+        filter: blur(3px) brightness(80%);
+    }
+
+
+
+}
+

@@ -1,0 +1,80 @@
+.form{
+    
+    &__section{
+        
+    width: 30%;
+    position: relative;
+    height: 100px;
+    overflow: hidden;
+    left: 50%;
+    transform: translateX(-50%);
+
+        &--input{
+            
+            font-size: $default-font-size;
+            width: 100%;
+            background-color: $color-grey-light-1;
+            height: 100%;
+            color: green;
+            padding-top: 75px;
+            border: none;
+            outline: none;
+            &:focus + .form__section--label::after,
+            &:valid + .form__section--label::after{
+                transform: translateX(0);
+            }
+            &:focus + .form__section--label .form__section--content-name,
+            &:valid + .form__section--label .form__section--content-name{
+                transform: translateY(-90%);
+                font-size: $default-font-size;
+                color: $color-primary;
+            }
+        }
+        
+        &--label{
+            font-size: $default-font-size;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            pointer-events: none;
+            border-bottom: 1px solid $color-primary;
+            &::after{
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -2px;
+                height: 100%;
+                width: 100%;
+                border-bottom: 3px solid green;
+                transform: translateX(-100%);
+                transition: transform 0.3s ease;
+            }
+        }
+        &--content-name{
+            font-size: $default-font-size;
+            position: absolute;
+            bottom: 5px;
+            left: 0px;
+            transition: all 0.3s ease;
+        }
+
+        &--input-send{
+            margin-top: 4rem;
+            width: 60%;
+            background-color: $color-primary;
+            border: none;
+            height: 3rem;
+            border-radius: 3px;
+            color: $color-white;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            &:hover{
+                transform: translateY(-2px);
+                box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+            }
+        }
+    }
+}
+

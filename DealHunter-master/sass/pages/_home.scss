@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    height: 100%;
+    
+  }
+.section-categories{
+    
+    padding-bottom: 6rem;
+    background-color: $color-grey-light-1;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.section-randomAdd{
+    //background-size: cover;
+    padding: 15rem;
+    background-color: $color-grey-light-1;
+}
+.section-product{
+    background-color: $color-grey-light-1;
+    height: 80vh;
+    min-height: 90vh;
+    text-align: center;
+
+}
+.section-perfil-header{
+    background-color: $color-grey-light-1;
+    padding: 3rem;
+    text-align: center;
+}
+.section-perfil-ventas{
+    padding-top: 2vh;
+    background-color: $color-grey-light-1;
+    text-align: center;
+    
+
+}
+.section-perfil-valoraciones{
+    background-color: $color-grey-light-1;
+    text-align: center;
+}
+.section-sign-up{
+    background-color: $color-grey-light-1;
+    height: 70vh;
+    padding: 3rem;
+    text-align: center;
+    color: $color-primary;
+}
+.section-piepag{
+    //position: relative;
+    float: left;
+    bottom: 0%;
+    padding: 2em;
+    width: 100%;
+    margin-bottom: 2em;
+    
+    
+    background-size: 15vh;
+    background-color:$color-primary;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.section-chat{
+    block-size: 85vh;
+    padding-bottom: 2vh;;
+    background-color: $color-grey-light-1;
+    padding-top: 4em;
+
+    
+}
+

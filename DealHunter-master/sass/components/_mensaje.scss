@@ -1,0 +1,72 @@
+.mensaje {
+	position: relative;
+	background: $color-white;
+	border-radius: .4em;
+	//width: 80%;
+	min-height: 4em;
+	min-width: 50%;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	
+	margin-right: 20%;
+	
+    &:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 32px solid transparent;
+	border-right-color: $color-white;
+	border-left: 0;
+	border-top: 0;
+	margin-top: -16px;
+	margin-left: -32px;
+	}
+	
+
+
+	&--derecho{
+	
+		
+			position: relative;
+			background:$color-primary;
+			border-radius: .4em;
+			float: right;
+			margin-right: 5%;
+			color: $color-white;
+		
+		
+		
+
+}
+
+&--izquierdo{
+
+	
+		position: relative;
+		background: $color-secondary-light-3;
+		border-radius: .4em;
+		float: left;
+		color: $color-white;
+		margin-left: 5%;
+	
+	
+	&:after {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 50%;
+		width: 0;
+		height: 0;
+		border: 48px solid transparent;
+		border-right-color: $color-secondary-light-3;
+		border-left: 0;
+		border-top: 0;
+		margin-top: -24px;
+		margin-left: -48px;
+	}
+	
+}
+}
